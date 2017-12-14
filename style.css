@@ -10,6 +10,10 @@ body {
 h1 {
 	margin: auto;
 }
+article
+{
+	margin: auto 5px;
+}
 h2 {
 	border-left: 5px solid purple;
 	padding-left: 5px;
@@ -21,7 +25,7 @@ h2:first-letter {
 }
 h3 {
 	border-bottom: 3px solid orchid;
-	padding-left: 5px;
+	padding-left: 10px;
 	font-size: normal;
 }
 nav > ul {
