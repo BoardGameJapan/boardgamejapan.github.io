@@ -1,10 +1,10 @@
 var data = {
-	page: 'Top',
+	page: location.hash == '' ? 'top' : location.hash.substr(1),
 	pages: [
-		'Top',
-		'About',
-		'Works',
-		'Contact',
+		'top',
+		'about',
+		'works',
+		'contact',
 	],
 };
 

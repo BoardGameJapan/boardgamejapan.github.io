@@ -16,14 +16,14 @@
 			<h1>Board Game Japan</h1>
 			<nav>
 				<ul>
-					<li v-for="p in pages"><a href="#" v-on:click="page = p">{{p}}</a></li>
+					<li v-for="p in pages"><a v-bind:href="'#' + p" v-on:click="page = p">{{p.charAt(0).toUpperCase() + p.slice(1)}}</a></li>
 				</ul>
 			</nav>
-			<article v-show="page == 'Top'">
+			<article v-show="page == 'top'">
 				<h2>Top</h2>
 				<p>Topページです。</p>
 			</article>
-			<article v-show="page == 'About'">
+			<article v-show="page == 'about'">
 				<h2>About us</h2>
 				<p>NPO法人Board Game Japanの概要です。</p>
 				<section>
@@ -41,7 +41,7 @@
 					<p>平成29年1月に発起人が呼びかけを行い、これに賛同者が集まって法人化の方向性を決め、平成29年1月28日の設立総会を経て、法人化の意思を確認した。</p>
 				</section>
 			</article>
-			<article v-show="page == 'Works'">
+			<article v-show="page == 'works'">
 				<h2>Works</h2>
 				<p>開発中のボードゲームを紹介します。</p>
 				<article>
@@ -59,7 +59,7 @@
 					<p>Party×Partyについて</p>
 				</article>
 			</article>
-			<article v-show="page == 'Contact'">
+			<article v-show="page == 'contact'">
 				<h2>Contact</h2>
 				<p>連絡先です。</p>
 			</article>
