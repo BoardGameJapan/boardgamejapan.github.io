@@ -7,27 +7,30 @@ body {
 	color: black;
 	padding: 5px;
 }
+
 h1 {
 	margin: auto;
 }
+
 article
 {
 	margin: auto 5px;
 }
 h2 {
-	border-left: 5px solid purple;
+	border-left: 5px solid orchid;
 	padding-left: 5px;
 	font-size: large;
 	background-color: #ccc;
 }
 h2:first-letter {
-	color: darkmagenta;
+	color: darkorchid;
 }
 h3 {
 	border-bottom: 3px solid orchid;
 	padding-left: 10px;
 	font-size: normal;
 }
+
 nav > ul {
 	display:inline-flex;
 	justify-content: space-between;
@@ -37,16 +40,17 @@ nav > ul {
 	padding-left: 0;
 }
 nav ul > li {
-	border: 1px dotted violet;
+	border: 1px dashed violet;
 	margin: 5px;
 	padding: 5px;
 }
 a, a:visited {
 	color: darkorchid;
 }
+
 em {
 	font-style: normal;
-	border-bottom: 1px dotted orchid;
+	border-bottom: 1px dashed orchid;
 }
 strong {
 	font-style: normal;
@@ -57,6 +61,7 @@ p {
 	margin: 1em auto;
 }
 img {
+	/* responsive */
 	max-width: 100%; 
 	display: block;
 	height: auto;
