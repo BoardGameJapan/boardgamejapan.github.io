@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"/>
+		<title>Board Game Japan</title>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<script src="https://unpkg.com/vue"></script>
+		<script defer="defer" src="script.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<!-- logo -->
+			<h1>Board Game Japan</h1>
+			<nav>
+				<ul>
+					<li v-for="p in pages"><a href="#" v-on:click="page = p">{{p}}</a></li>
+				</ul>
+			</nav>
+			<article v-show="page == 'Top'">
+				<h2>Top</h2>
+				<p>Topページ</p>
+			</article>
+			<article v-show="page == 'About'">
+				<h2>About us</h2>
+				<p>団体概要</p>
+			</article>
+			<article v-show="page == 'Works'">
+				<h2>Works</h2>
+				<p>開発中のボードゲーム</p>
+				<article>
+					<h3>とらとら将棋</h3>
+					<p>とらとら将棋について</p>
+				</article>
+				<article>
+					<h3>京都福笑い</h3>
+					<p>京都福笑いについて</p>
+				</article>
+				<article>
+					<h3>Party×Party</h3>
+					<p>Party×Partyについて</p>
+				</article>
+			</article>
+			<article v-show="page == 'Contact'">
+				<h2>Contact</h2>
+				<p>連絡先</p>
+			</article>
+		</div>
+	</body>
+</html>
