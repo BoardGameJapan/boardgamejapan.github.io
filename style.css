@@ -7,9 +7,23 @@ body {
 	color: black;
 	padding: 5px;
 }
-
+#app
+{
+	display: flex;
+	flex-flow: column wrap;
+}
 h1 {
+	order: 1;
 	margin: auto;
+}
+nav
+{
+	order: 2;
+	margin: auto;
+}
+#app > article
+{
+	order: 3;
 }
 
 article
