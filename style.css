@@ -13,6 +13,7 @@ body {
 {
 	display: flex;
 	flex-flow: column wrap;
+	min-height: 100vh;
 }
 nav > ul, article {
 	max-width: 770px; /* 幅の広いデバイスで両端に余白のある中央寄せを行う */
@@ -21,6 +22,7 @@ nav > ul, article {
 article
 {
 	order: 3;
+	flex: 1;
 	padding: 0px 5px;
 	margin: auto;
 }
@@ -65,16 +67,18 @@ nav a {
 	text-align: center;
 	margin: 3px;
 	padding: 5px;
-	text-decoration: none;
-	color: var(--color-base) !important;
-}
-nav a:hover {
-	background-color: var(--color-base);
-	color: var(--color-main) !important;
 }
 /* Inline elements */
 a, a:visited {
 	color: var(--color-main);
+}
+a.reversed {
+	color: var(--color-base) !important;
+	text-decoration: none;
+}
+a.reversed:hover {
+	background-color: var(--color-base);
+	color: var(--color-main) !important;
 }
 em {
 	font-style: normal;
@@ -99,4 +103,10 @@ img {
 }
 summary {
 	cursor: pointer;
+}
+footer {
+	order: 4;
+	background-color: var(--color-main);
+	color: var(--color-base);
+	text-align: center;
 }

@@ -95,9 +95,10 @@
 			</article>
 			<nav>
 				<ul>
-					<li v-for="p in pages"><a v-bind:href="'#' + p" v-on:click="page = p">{{p.charAt(0).toUpperCase() + p.slice(1)}}</a></li>
+					<li v-for="p in pages"><a class="reversed" v-bind:href="'#' + p" v-on:click="page = p">{{p.charAt(0).toUpperCase() + p.slice(1)}}</a></li>
 				</ul>
 			</nav>
+			<footer><small>Copyright &copy; 2017-2018 <a class="reversed" href="#contact">Board Game Japan</a>. All rights reserved.</small></footer>
 		</div>
 	</body>
 </html>
