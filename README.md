@@ -6,6 +6,7 @@
 
 - SPAに使われる[Vue.js](https://vuejs.org)を採用した
 - index.htmlのarticleタグの表示を切り替えてSPA型のサイトとした
+- *index.html*, *style.css*, *script.js* + Vue.js(外部サーバ) + *img*/(画像)の最小構成で作成
 
 ## 検索エンジン最適化(SEO)
 
