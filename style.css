@@ -6,8 +6,8 @@
 body {
 	background-color: var(--color-base);
 	color: var(--color-text);
-	margin: 0;
-	overflow-y: scroll;
+	margin: 0; /* ブラウザの初期CSSにある余白を消去 */
+	overflow-y: scroll; /* スクロールバーの有無でページごとにメニューがずれるのを抑止 */
 }
 #app
 {
@@ -15,8 +15,8 @@ body {
 	flex-flow: column wrap;
 }
 nav > ul, article {
-	max-width: 770px;
-	min-width: 60%;
+	max-width: 770px; /* 幅の広いデバイスで両端に余白のある中央寄せを行う */
+	min-width: 60%; /* 幅を埋めるだけのテキストがないページが中央に表示されすぎるのを抑止 */
 }
 article
 {
@@ -55,10 +55,10 @@ nav > ul {
 	flex-flow: row wrap;
 	list-style-type: none;
 	margin: 0 auto;
-	padding: 0;
+	padding: 0; /* ブラウザの初期CSSにあるリスト用の余白を消去 */
 }
 nav > ul > li{
-	flex-grow: 1;
+	flex-grow: 1; /* ナビゲーションメニューを幅に応じて伸縮させる */
 }
 nav a {
 	display: block;
@@ -88,13 +88,12 @@ strong {
 }
 /* Block elements */
 p {
-	text-indent: 1em;
+	text-indent: 1em; /* 段落の最初に字下げを行う */
 	margin: 1em auto;
 }
 img {
-	/* responsive */
-	max-width: 100%; 
+	max-width: 100%; /* responsiveに画像を伸縮させる */
 	display: block;
 	height: auto;
-	margin: auto;
+	margin: auto; /* 画像を中央に揃える */
 }
