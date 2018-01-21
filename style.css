@@ -97,3 +97,6 @@ img {
 	height: auto;
 	margin: auto; /* 画像を中央に揃える */
 }
+summary {
+	cursor: pointer;
+}
