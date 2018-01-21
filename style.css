@@ -76,10 +76,12 @@ a, a:visited {
 em {
 	font-style: normal;
 	border-bottom: 1px dashed var(--color-main);
+	color: var(--color-main);
 }
 strong {
 	font-style: normal;
 	font-weight: bold;
+	color: var(--color-main);
 }
 /* Block elements */
 p {
