@@ -1,0 +1,26 @@
+﻿<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Board Game Japan</title>
+	<subtitle>特定非営利活動法人Board Game Japanの公式サイトです。学習要素を含むボードゲームの開発と、ボードゲームの開発・振興・研究に向けたプラットフォームの構築を行っています。</subtitle>
+	<id>tag:boardgamejapan.org,2018:/feed.atom</id>
+	<link href="https://boardgamejapan.org"/>
+	<author>
+		<name>Board Game Japan</name>
+	</author>
+	<updated>2018-02-08T10:00:00Z</updated>
+
+	<entry>
+		<title>Contact</title>
+		<link href="https://boardgamejapan.org/#contact"/>
+		<id>tag:saireya.github.io,2018-02-08:/#contact</id>
+		<updated>2018-02-08T10:00:00Z</updated>
+		<summary>Board Game Japanへのお問い合わせフォームを作成しました。</summary>
+	</entry>
+	<entry>
+		<title>Top</title>
+		<link href="https://boardgamejapan.org/#top"/>
+		<id>tag:saireya.github.io,2018-02-08:/#top</id>
+		<updated>2018-02-08T03:00:00Z</updated>
+		<summary>公式Webサイトを開設しました。</summary>
+	</entry>
+
+</feed>
