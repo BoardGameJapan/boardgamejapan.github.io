@@ -21,19 +21,15 @@ function getFeedEntries(url) {
 		.then(text => {
 			var parser = new DOMParser();
 			var xml = parser.parseFromString(text, "text/xml");
-			var entries = xml.getElementsByTagName("entry");
-			for (var i = 0; i < entries.length; i++) {
+			var entries = xml.querySelectorAll("entry");
+			[].forEach.call(entries, e => {
 				data.news.push({
-					title: getChildTag(entries, i, "title").textContent,
-					link: getChildTag(entries, i, "link").getAttribute("href"),
-					updated: getChildTag(entries, i, "updated").textContent.split('T')[0],
-					summary: getChildTag(entries, i, "summary").textContent,
+					title: e.querySelector("title").textContent,
+					link: e.querySelector("link").getAttribute("href"),
+					updated: e.querySelector("updated").textContent.split('T')[0],
+					summary: e.querySelector("summary").textContent,
 				});
-			}
+			});
 		});
 }
 getFeedEntries("./feed.atom");
-
-function getChildTag(e, i, tagname) {
-	return e[i].getElementsByTagName(tagname)[0];
-}
