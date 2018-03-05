@@ -21,13 +21,13 @@ function getFeedEntries(url) {
 		.then(text => {
 			var parser = new DOMParser();
 			var xml = parser.parseFromString(text, "text/xml");
-			var entries = xml.querySelectorAll("entry");
+			var entries = xml.getElementsByTagName("entry");
 			[].forEach.call(entries, e => {
 				data.news.push({
-					title: e.querySelector("title").textContent,
-					link: e.querySelector("link").getAttribute("href"),
-					updated: e.querySelector("updated").textContent.split('T')[0],
-					summary: e.querySelector("summary").textContent,
+					//title: e.getElementsByTagName("title")[0].textContent,
+					link: e.getElementsByTagName("link")[0].getAttribute("href"),
+					updated: e.getElementsByTagName("updated")[0].textContent.split('T')[0],
+					summary: e.getElementsByTagName("summary")[0].textContent,
 				});
 			});
 		});
