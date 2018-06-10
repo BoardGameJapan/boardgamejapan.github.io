@@ -9,16 +9,23 @@
 	<updated>2018-02-08T10:00:00Z</updated>
 
 	<entry>
+		<title>Works</title>
+		<link href="https://boardgamejapan.org/#works"/>
+		<id>tag:boardgamejapan.org,2018-06-10:/#works</id>
+		<updated>2018-06-10T17:00:00Z</updated>
+		<summary>「京都福笑い」の解説を加筆しました。</summary>
+	</entry>
+	<entry>
 		<title>Contact</title>
 		<link href="https://boardgamejapan.org/#contact"/>
-		<id>tag:saireya.github.io,2018-02-08:/#contact</id>
+		<id>tag:boardgamejapan.org,2018-02-08:/#contact</id>
 		<updated>2018-02-08T10:00:00Z</updated>
 		<summary>Board Game Japanへのお問い合わせフォームを作成しました。</summary>
 	</entry>
 	<entry>
 		<title>Top</title>
 		<link href="https://boardgamejapan.org/#top"/>
-		<id>tag:saireya.github.io,2018-02-08:/#top</id>
+		<id>tag:boardgamejapan.org,2018-02-08:/#top</id>
 		<updated>2018-02-08T03:00:00Z</updated>
 		<summary>公式Webサイトを開設しました。</summary>
 	</entry>
