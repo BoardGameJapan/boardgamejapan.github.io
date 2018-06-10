@@ -30,7 +30,7 @@
 				<section>
 					<h3>最新情報<a href="feed.atom"><img src="img/feed.png" alt="Atom Feed" title="Atom Feed"/></a></h3>
 					<ul>
-						<li v-for="n in news"><time>{{n.updated}}</time>: <a v-bind:href="n.link">{{n.summary}}</a></li>
+						<li v-for="n in news"><time>{{n.updated}}</time>: <a v-bind:href="'#' + n.link.split('#')[1]" v-on:click="page = n.link.split('#')[1]">{{n.summary}}</a></li>
 					</ul>
 				</section>
 			</article>
