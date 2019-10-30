@@ -110,6 +110,9 @@ summary {
 	cursor: pointer;
 	margin-bottom: 1em;
 }
+table {
+	margin: auto;
+}
 footer {
 	order: 4;
 	background-color: var(--color-main);
