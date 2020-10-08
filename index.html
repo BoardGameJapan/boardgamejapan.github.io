@@ -27,6 +27,11 @@
 				<h2>Top</h2>
 				<p>NPO法人<strong>Board Game Japan</strong>は、学習要素を含むボードゲームの開発と、ボードゲームの開発・振興・研究に向けたプラットフォームの構築を行っています。</p>
 				<section>
+					<p>2020/10/5(月)より、<a href="https://honto.jp/store/detail_1570065_14HB320.html">MARUZEN＆ジュンク堂書店 梅田店</a>(阪急梅田駅近く)の1Fにて、Board Game Japan推薦ボードゲームの販売を開始しました!
+					店頭入荷分には限りがありますので、品切れの場合もございます。各製品の在庫状況については、直接店舗までお問い合わせください。</p>
+					<img src="img/mj-umeda.jpg" alt="MARUZEN＆ジュンク堂書店 梅田店1Fにあるボードゲームコーナーの様子です" width="50%" title="MARUZEN＆ジュンク堂書店 梅田店1Fにあるボードゲームコーナーの様子(提供: 同店)"/>
+				</section>
+				<section>
 					<h3>最新情報<a href="feed.atom"><img src="img/feed.png" alt="Atom Feed" title="Atom Feed"/></a></h3>
 					<ul>
 						<li v-for="n in news"><time>{{n.updated}}</time>: <a v-bind:href="'#' + n.link.split('#')[1]" v-on:click="page = n.link.split('#')[1]">{{n.summary}}</a></li>
