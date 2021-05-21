@@ -100,7 +100,7 @@ p {
 	text-indent: 1em; /* 段落の最初に字下げを行う */
 	margin-bottom: 1em;
 }
-section > img {
+section > img, article > img {
 	max-width: 100%; /* responsiveに画像を伸縮させる */
 	display: block;
 	height: auto;
