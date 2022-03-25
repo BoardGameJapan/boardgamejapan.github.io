@@ -9,10 +9,12 @@ var data = {
 	news: [],
 };
 
-var app = new Vue({
-	el: '#app',
-	data: data,
-});
+const app = {
+	data() {
+		return data;
+	}
+};
+Vue.createApp(app).mount('#app');
 
 // feedを読み込む
 function getFeedEntries(url) {
