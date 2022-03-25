@@ -6,8 +6,15 @@
 	<author>
 		<name>Board Game Japan</name>
 	</author>
-	<updated>2022-02-07T18:00:00Z</updated>
+	<updated>2022-03-25T09:00:00Z</updated>
 
+	<entry>
+		<title>Top</title>
+		<link href="https://boardgamejapan.org/#top"/>
+		<id>tag:boardgamejapan.org,2022-03-25:/#top</id>
+		<updated>2022-03-25T09:00:00Z</updated>
+		<summary>京都SDGsゲームショウのアーカイブサイトを公開しました!</summary>
+	</entry>
 	<entry>
 		<title>About</title>
 		<link href="https://boardgamejapan.org/#about"/>
