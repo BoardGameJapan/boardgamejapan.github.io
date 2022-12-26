@@ -1,0 +1,121 @@
+:root {
+	--color-main: #4a488e;
+	--color-base: white;
+	--color-text: black;
+}
+body {
+	background-color: var(--color-base);
+	color: var(--color-text);
+	margin: 0; /* ブラウザの初期CSSにある余白を消去 */
+	overflow-y: scroll; /* スクロールバーの有無でページごとにメニューがずれるのを抑止 */
+}
+#app
+{
+	display: flex;
+	flex-flow: column wrap;
+	min-height: 100vh;
+}
+nav > ul, article {
+	max-width: 770px; /* 幅の広いデバイスで両端に余白のある中央寄せを行う */
+	min-width: 60%; /* 幅を埋めるだけのテキストがないページが中央に表示されすぎるのを抑止 */
+}
+article
+{
+	order: 3;
+	flex: 1;
+	padding: 0px 5px;
+	margin: auto;
+}
+/* Headings */
+h1 {
+	order: 1;
+	margin: auto;
+}
+h2 {
+	border-left: 5px solid var(--color-main);
+	padding-left: 5px;
+	font-size: large;
+}
+h2:first-letter {
+	color: var(--color-main);
+}
+h3 {
+	border-bottom: 3px solid var(--color-main);
+	padding-left: 10px;
+	font-size: normal;
+}
+h4 {
+	border-bottom: 1px dashed var(--color-main);
+	margin: 0;
+	font-size: normal;
+}
+/* Navigation menu */
+nav
+{
+	order: 2;
+	width: 100%;
+	background-color: var(--color-main);
+}
+nav > ul {
+	display:flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0; /* ブラウザの初期CSSにあるリスト用の余白を消去 */
+}
+nav > ul > li{
+	flex-grow: 1; /* ナビゲーションメニューを幅に応じて伸縮させる */
+}
+nav a {
+	display: block;
+	text-align: center;
+	margin: 3px;
+	padding: 5px;
+}
+/* Inline elements */
+a, a:visited {
+	color: var(--color-main);
+}
+a.reversed {
+	color: var(--color-base) !important;
+	text-decoration: none;
+}
+a.reversed:hover {
+	background-color: var(--color-base);
+	color: var(--color-main) !important;
+}
+em {
+	font-style: normal;
+	border-bottom: 1px dashed var(--color-main);
+	color: var(--color-main);
+}
+strong {
+	font-style: normal;
+	font-weight: bold;
+	color: var(--color-main);
+}
+/* Block elements */
+p {
+	text-indent: 1em; /* 段落の最初に字下げを行う */
+	margin-bottom: 1em;
+}
+section > img, article > img {
+	max-width: 100%; /* responsiveに画像を伸縮させる */
+	display: block;
+	height: auto;
+	margin: auto; /* 画像を中央に揃える */
+}
+summary {
+	cursor: pointer;
+	margin-bottom: 1em;
+}
+table {
+	margin: auto;
+}
+footer {
+	order: 4;
+	background-color: var(--color-main);
+	color: var(--color-base);
+	text-align: center;
+}

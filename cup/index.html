@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+		<meta name="description" content="NPO法人Board Game Japanの公式サイトです。学習要素を含むボードゲームの開発と、ボードゲームの開発・振興・研究に向けたプラットフォームの構築を行っています。"/>
+		<meta name="keywords" content="Board Game Japan, BGJ, ボードゲームジャパン, とらとら将棋, 京都福笑い, Party×Party"/>
+		<title>「第1回Board Game Japanカップ」特設サイト(仮)</title>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script defer="defer" src="script.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-115048844-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-115048844-1');
+		</script>
+	</head>
+	<body>
+		<div id="app">
+			<!-- logo -->
+			<h1>第1回Board Game Japanカップ(仮)</h1>
+			<article v-show="page == 'top'">
+				<h2>「第1回Board Game Japanカップ」の開催にあたって</h2>
+				<p>NPO法人<a href="/">Board Game Japan</a>では、若年層のボードゲームクリエイターによるユニークな作品や、様々なゲームを楽しむユーザーの “ボードゲーム愛” に光を当て、それらを表彰するコンテスト「Board Game Japanカップ」を初開催します。
+					学生の方や親子で応募される方を対象とした「クリエイター部門」と、どなたでも応募できる「ユーザー部門」の2部門があり、ささやかですが受賞された方への賞品も用意しています。
+					現在、<strong>プレエントリー受付</strong>期間となっておりますので、ご興味を持たれた方はぜひご登録ください！</p>
+				<p id="bg">* このコンテストにおける「<strong>ボードゲーム</strong>」は、<em>ボードゲームやカードゲームなどのアナログゲーム全般</em>を指します。</p>
+				<section>
+					<h3>スケジュール</h3>
+					<table>
+						<tr><th>プレエントリー期間</th><td>12/**（＊）〜1/9（月）</td></tr>
+						<tr><th>本エントリー期間</th><td>1/10（火）〜2/13（月）</td></tr>
+						<tr><th>審査員による選考</th></td><td>2月下旬〜3月初旬</td></tr>
+						<tr><th>審査結果発表</th><td>3月中旬ごろ</td></tr>
+					</table>
+				</section>
+				<section>
+					<h3>主催</h3>
+					<p>NPO法人<a href="/">Board Game Japan</a></p>
+					<p>学習要素を含むボードゲームの開発と、ボードゲームの開発・振興・研究に向けたプラットフォームの構築を行っている団体です。
+						「Board Game Japanカップ」に関するお問い合わせは、ウェブサイトの<a href="https://boardgamejapan.org/#contact">お問い合わせフォーム</a>からお願いいたします。</p>						
+				</section>
+			</article>
+			<article v-show="page == 'genre'">
+				<h2>部門</h2>
+				<p>Board Game Japanカップは、「<a href="#creator">クリエイター部門</a>」と「<a href="#user">ユーザー部門</a>」の2部門について、エントリーを募集します。
+					お一人の方が、クリエイター部門とユーザー部門の<em>両方に応募</em>することや、各部門の中で<em>重複エントリー</em>（複数の作品についてそれぞれ応募）することも可能です。</p>
+				<section id="creator">
+					<h3>クリエイター部門</h3>
+					<dl>
+						<dt>対象</dt>
+						<dd>オリジナルのボードゲームを自作したことがある、<strong>小学生、中学生、高校生、大学・短期大学・専門学校生、ファミリー（幼児と保護者の方など）</strong>の方<br/>
+							＊ 作品を共同で制作された場合、<em>複数名やチームでの応募も可能</em>です。その場合、本エントリー時に制作者全員のお名前を記載してください。</dd>
+						<dt>賞・賞品</dt>
+						<dd>
+							<ul>
+								<li><strong>大賞</strong> (1本程度)<br/>
+									賞品: Amazonギフトカード<em>5万円</em>分<br/>
+									副賞: 2023年5月に東京ビッグサイトで開催予定の「<a href="https://gamemarket.jp">ゲームマーケット2023春</a>」にBoard Game Japanと<em>共同出展</em>していただくことができます。出展費のほか、代表者の方1名の<em>交通費・宿泊費をBoard Game Japanが負担</em>します。</li>
+								<li><strong>入賞</strong> (10本以内)<br/>
+									賞品: Amazonギフトカード<em>1万円</em>分<br/>
+									副賞: 「第1回 Board Game Japanカップ入賞作品」であることを示すオリジナルの<em>ロゴデータ</em>をお送りします。ボードゲームを商品化される際のパッケージや、制作資金を調達する際のクラウドファンディングなどにご活用ください。</li>
+							</ul>
+						</dd>
+						<dt>応募内容</dt>
+						<dd>自作したオリジナルの<strong>ボードゲームのアイデア</strong>
+							<ul>
+								<li>応募時点では完成していない「プロトタイプ」のボードゲームであっても、一度でも「<strong>テストプレイ</strong>」（ここでは、<em>制作者が想定したルールに沿って、制作中のゲームで人々が実際に遊んでみる</em>ことを指します）を行ったことがあれば応募できます。</li>
+								<li>数年以内であれば、<em>過去に制作したボードゲーム</em>でも応募できます。</li>
+								<li>応募できるボードゲームは<strong>自作のもの</strong>のみです。<em>他者の作品での応募はご遠慮ください</em>。<strong>盗作が判明した場合、受賞後であっても受賞は取り消されます</strong>。</li>
+							</ul>
+						</dd>
+						<dt>応募方法</dt>
+						<dd>Googleフォーム（本エントリー受付開始時に公開します）に必要事項を記入し、オリジナルのボードゲームに関する下記のものを添付してエントリーしてください。
+							添付資料のうち、任意のものは添付しなくても応募できますが、<em>添付した場合は審査員が内容を理解しやすくなるため、評価が高くなる可能性</em>があります。
+							<ul>
+								<li>添付<strong>必須</strong>のもの: <strong>写真</strong></li>
+								<li>添付<em>任意</em>のもの: <em>企画書</em>, <em>プレイ動画</em>（5分以内）, <em>ルールブック</em></li>
+							</ul>
+						</dd>
+						<dt>審査基準</dt>
+						<dd>「<strong>今後の可能性</strong>を感じさせるかどうか」を基準に、審査員が主観で評価します。
+							また、主に小学生、中学生、ファミリー（幼児と保護者の方など）の方の作品については「<strong>発想の面白さ</strong>や作品にかける<strong>クリエイターの熱量</strong>」、主に高校生、大学・短期大学・専門学校生の方の作品については「その作品が持つ<strong>社会的意義</strong>（<em>社会課題へのアプローチ</em>や<em>ゲームを通した学び</em>など）」を中心に評価します。</dd>
+					</dl>
+				</section>
+				<section id="user">
+					<h3>ユーザー部門</h3>
+					<dl>
+						<dt>対象</dt>
+						<dd>ボードゲームやカードゲームなどのアナログゲームを楽しむ<strong>すべての方</strong></dd>
+						<dt>賞・賞品</dt>
+						<dd>
+							<ul>
+								<li><strong>入賞</strong> (5本以内)<br/>
+									賞品: Amazonギフトカード<em>1万円</em>分</li>
+							</ul>
+						</dd>
+						<dt>応募内容</dt>
+						<dd><strong>ボードゲームの魅力</strong>を伝える<em>文章</em>または<em>画像</em>
+							<ul>
+								<li><em>個々のボードゲームの魅力</em>を伝える内容でも、<em>ボードゲーム全般の魅力</em>を伝える内容でも結構です。</li>
+								<li>応募できる文章や画像は<strong>自作のもの</strong>のみです。<em>他者の作品での応募はご遠慮ください</em>。<strong>盗作が判明した場合、受賞後であっても受賞は取り消されます</strong>。</li>
+							</ul>
+						</dd>
+						<dt>応募方法</dt>
+						<dd>Googleフォーム（本エントリー受付開始時に公開します）に必要事項を記入し、下記のいずれかの方法を選んでエントリーしてください。
+							作文、川柳、SNS投稿とも、<strong>未発表のもの</strong>を応募対象（すでにインターネットや紙面などに掲載済みのものは対象外）とさせていただきます。
+							<ul>
+								<li>ボードゲームに関する<strong>作文</strong>（<em>800〜1200文字</em>程度）</li>
+								<li>ボードゲームに関する<strong>川柳</strong>（五・七・五の<em>17文字</em>程度、字余り・字足らず可）</li>
+								<li>ボードゲームに関する<strong>SNS投稿</strong>（Twitterを想定した<em>140字以内</em>の文章や、Instagramのストーリーズを想定した<em>複数枚の画像</em>など、SNSに投稿できる内容）</li>
+							</ul>
+						</dd>
+						<dt>審査基準</dt>
+						<dd>「<strong>ボードゲームの魅力</strong>を感じさせる内容かどうか」を基準に、審査員が主観で評価します。</dd>
+					</dl>
+				</section>
+			</article>
+			<article v-show="page == 'judge'">
+				<h2>審査</h2>
+				<section>
+					<h3>審査員</h3>
+					<ul>
+						<li><a href="https://researchmap.jp/keikano">加納 圭</a>さん（滋賀大学教育学部教授。主な研究分野：科学コミュニケーション）</li>
+						<li><a href="https://ifi.u-tokyo.ac.jp/people/ema-arisa/">江間 有沙</a>さん（東京大学未来ビジョン研究センター准教授。主な研究分野：科学技術社会論）</li>
+					</ul>
+					<p>＊今後、上記以外の審査員の方に加わっていただく可能性があります。</p>
+				</section>
+				<section>
+					<h3>審査方法</h3>
+					<p>2月下旬に、本エントリー用のGoogleフォームに記載された内容および添付資料をもとに選考を行い、受賞候補作品を選定します。
+						それらの作品が応募者によるオリジナル作品かどうかの確認を事務局で行った上で、3月初旬に審査員による合議を行って受賞作品および大賞受賞作を決定し、3月中旬に審査結果を発表する予定です。
+						入賞されたかどうかに関わらず、本エントリーをされた方全員に審査結果をお伝えします。</p>
+				</section>
+			</article>
+			<article v-show="page == 'entry'">
+				<h2>応募</h2>
+				<p><strong>プレエントリー</strong>期間は<em>12/**（＊）〜1/9（月）</em>、<strong>本エントリー</strong>期間は<em>1/10（火）〜2/13（月）</em>です。</p>
+				<ul>
+					<li>プレエントリーをせずに本エントリーを行うこともできますが、プレエントリーを完了された方には本エントリー期間終了までの間、本エントリー期間の開始や終了数日前などのリマインダー、審査員・事務局からの応援メッセージなど、制作や応募を後押しするメールを数回お送りする予定です。</li>
+					<li>プレエントリーの手続きは3分程度で実行でき、記入内容が本エントリー時の審査に影響することもありませんので、応募に興味を持たれた方はぜひプレエントリーをしてみてください！</li>
+				</ul>
+				<section>
+					<h3>「第1回 Board Game Japanカップ」プレエントリー受付フォーム</h3>
+					<p>プレエントリーには、下記のフォーム(または<a href="https://docs.google.com/forms/d/e/1FAIpQLScjNNxp-QZQAXL0cprSwo_K0rw8ROJL4U9u2qEgb4vhAYkG7A/viewform">フォームを直接表示</a>)をご利用ください。</p>
+				</section>
+				<iframe loading="lazy" src="https://docs.google.com/forms/d/e/1FAIpQLScjNNxp-QZQAXL0cprSwo_K0rw8ROJL4U9u2qEgb4vhAYkG7A/viewform?embedded=true" width="100%" height="60%">読み込んでいます...</iframe>
+			</article>
+			<nav>
+				<ul>
+					<li v-for="p in pages"><a class="reversed" v-bind:href="'#' + p" v-on:click="page = p">{{p.charAt(0).toUpperCase() + p.slice(1)}}</a></li>
+				</ul>
+			</nav>
+			<footer><small>Copyright &copy; 2017-2022 <a class="reversed" href="#contact" v-on:click="page = 'contact'">Board Game Japan</a>. All rights reserved.</small></footer>
+		</div>
+	</body>
+</html>
