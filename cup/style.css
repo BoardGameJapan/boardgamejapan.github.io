@@ -113,6 +113,10 @@ summary {
 table {
 	margin: auto;
 }
+th {
+	background-color: var(--color-main);
+	color: var(--color-base);
+}
 footer {
 	order: 4;
 	background-color: var(--color-main);

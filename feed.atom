@@ -6,8 +6,22 @@
 	<author>
 		<name>Board Game Japan</name>
 	</author>
-	<updated>2022-03-25T09:00:00Z</updated>
+	<updated>2023-03-22T09:00:00Z</updated>
 
+	<entry>
+		<title>Cup</title>
+		<link href="https://boardgamejapan.org/cup/"/>
+		<id>tag:boardgamejapan.org,2023-03-22:/cup/</id>
+		<updated>2023-03-22T09:00:00Z</updated>
+		<summary>第1回Board Game Japanカップのサイトにて、審査結果を発表しました!</summary>
+	</entry>
+	<entry>
+		<title>About</title>
+		<link href="https://boardgamejapan.org/#about"/>
+		<id>tag:boardgamejapan.org,2023-02-19:/#about</id>
+		<updated>2023-02-19T09:00:00Z</updated>
+		<summary>2022年度の貸借対照表を公告しました。</summary>
+	</entry>
 	<entry>
 		<title>Cup</title>
 		<link href="https://boardgamejapan.org/cup/"/>

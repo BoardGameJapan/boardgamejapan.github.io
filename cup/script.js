@@ -5,6 +5,7 @@ var data = {
 		'genre',
 		'judge',
 		'entry',
+		'result',
 	],
 	news: [],
 };
