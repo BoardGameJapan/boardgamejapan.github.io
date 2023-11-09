@@ -6,8 +6,15 @@
 	<author>
 		<name>Board Game Japan</name>
 	</author>
-	<updated>2023-03-22T09:00:00Z</updated>
+	<updated>2023-11-09T09:00:00Z</updated>
 
+	<entry>
+		<title>Cup</title>
+		<link href="https://boardgamejapan.org/cup/"/>
+		<id>tag:boardgamejapan.org,2023-11-09:/cup/</id>
+		<updated>2023-11-09T09:00:00Z</updated>
+		<summary>第2回Board Game Japanカップのサイトを公開し、エントリーを開始しました!</summary>
+	</entry>
 	<entry>
 		<title>Cup</title>
 		<link href="https://boardgamejapan.org/cup/"/>
