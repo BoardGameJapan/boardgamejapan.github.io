@@ -6,8 +6,15 @@
 	<author>
 		<name>Board Game Japan</name>
 	</author>
-	<updated>2024-11-01T09:00:00Z</updated>
+	<updated>2025-01-26T09:00:00Z</updated>
 
+	<entry>
+		<title>About</title>
+		<link href="https://boardgamejapan.org/#about"/>
+		<id>tag:boardgamejapan.org,2025-01-26:/#about</id>
+		<updated>2025-01-26T09:00:00Z</updated>
+		<summary>2024年度の貸借対照表を公告しました。</summary>
+	</entry>
 	<entry>
 		<title>Cup</title>
 		<link href="https://boardgamejapan.org/cup/"/>
