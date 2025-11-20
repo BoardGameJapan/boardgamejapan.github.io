@@ -7,7 +7,7 @@
 		<meta name="keywords" content="Board Game Japan, BGJ, ボードゲームジャパン, Board Game Japanカップ"/>
 		<meta property="og:site_name" content="Board Game Japan"/>
 		<meta property="og:image" content="../img/logo.jpg"/>
-		<title>「第3回Board Game Japanカップ」特設サイト</title>
+		<title>「第4回Board Game Japanカップ」特設サイト</title>
 		<link rel="stylesheet" href="style.css" type="text/css"/>
 		<link rel="icon" href="../favicon.ico"/>
 		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -24,22 +24,21 @@
 	<body>
 		<div id="app">
 			<!-- logo -->
-			<h1>第3回Board Game Japanカップ</h1>
+			<h1>第4回Board Game Japanカップ</h1>
 			<article v-show="page == 'top'">
-				<h2>「第3回Board Game Japanカップ」を開催します!</h2>
+				<h2>「第4回Board Game Japanカップ」を開催します!</h2>
 				<p>NPO法人<a href="/">Board Game Japan</a>では、アマチュアのボードゲームクリエイターによるユニークな作品や、社会課題の解決やアカデミック・アウトリーチに貢献するゲームに光を当て、それらを表彰するコンテスト「第3回Board Game Japanカップ」を開催します。
-					一般（高校生以上）の方を対象にした「<a href="#creator" v-on:click="page = 'genre'">クリエイター部門</a>」と、小中学生の方を対象にした「<a href="#junior" v-on:click="page = 'genre'">ジュニアクリエイター部門</a>」の2部門があり、ささやかですが、受賞された方への賞品も用意しています。</p>
-				<p>多数のご応募、ありがとうございました! <!--現在選考を行っていますので、結果発表までお待ちください。--><a href="#result" v-on:click="page = 'result'">審査結果</a>を発表しました。</p>
+					ささやかですが、受賞された方への賞品も用意しています。</p>
+				<!--<p>多数のご応募、ありがとうございました!--><!--現在選考を行っていますので、結果発表までお待ちください。--><a href="#result" v-on:click="page = 'result'">審査結果</a>を発表しました。</p>
 				<p id="bg">* このコンテストにおける「<strong>ボードゲーム</strong>」は、<em>ボードゲームやカードゲームなどのアナログゲーム全般</em>を指します。</p>
-				<!--
 				<section>
 					<h3>スケジュール</h3>
 					<table>
-						<tr><th>エントリー期間</th><td>2024/11/1（金）～2025/1/10（金）</td></tr>
+						<tr><th>エントリー期間</th><td>2025/11/22（土）～2026/1/11（日）</td></tr>
 						<tr><th>選考期間</th></td><td>1月中旬～下旬</td></tr>
-						<tr><th>審査結果発表</th><td>2月上旬 (予定)</td></tr>
+						<tr><th>審査結果発表</th><td>2月中旬 (予定)</td></tr>
 					</table>
-				</section>-->
+				</section>
 				<section>
 					<h3>過去の実施結果</h3>
 					<ul>
@@ -58,8 +57,7 @@
 			</article>
 			<article v-show="page == 'genre'">
 				<h2>部門</h2>
-				<p>Board Game Japanカップは、一般（高校生以上）の方を対象にした「<a href="#creator">クリエイター部門</a>」と、小中学生の方を対象にした「<a href="#junior">ジュニアクリエイター部門</a>」の2部門について、エントリーを募集します。
-					応募は<em>お一人につき1部門・1作品</em>となります。ただし、複数名で共同制作された作品に関しては、エントリーされる代表者の方が別であれば、同じ方が制作に関わっていてもエントリーすることができます。</p>
+				<p>第4回より、「クリエイター部門」と「ジュニアクリエイター部門」の2部門を統合し、「クリエイター部門」のみとなりました。ただし、小中学生のクリエイターの方を対象とした「ジュニア賞」を設けています。</p>
 				<section id="creator">
 					<h3>クリエイター部門</h3>
 					<dl>
@@ -70,11 +68,14 @@
 						<dd>
 							<ul>
 								<li><strong>大賞</strong> (1作品)<br/>
-									賞品: Amazonギフトカード<em>5万円</em>分<br/>
-									副賞: 「第3回 Board Game Japanカップ大賞受賞作品」であることを示すオリジナルの<em>ロゴデータ</em>をお送りします。ボードゲームを商品化される際のパッケージや、制作資金を調達する際のクラウドファンディングなどにご活用ください。</li>
+									賞品: Amazonギフトカード<em>5万円</em>分<br/></li>
 								<li><strong>入賞</strong> (5作品以内)<br/>
-									賞品: Amazonギフトカード<em>1万円</em>分<br/>
-									副賞: 「第3回 Board Game Japanカップ入賞作品」であることを示すオリジナルの<em>ロゴデータ</em>をお送りします。ボードゲームを商品化される際のパッケージや、制作資金を調達する際のクラウドファンディングなどにご活用ください。</li>
+									賞品: Amazonギフトカード<em>1万円</em>分<br/></li>
+								<li><strong>ジュニア賞</strong> (3作品以内)<br/>
+									賞品: Amazonギフトカード<em>1万円</em>分<br/></li>
+								<li>＊ジュニア賞は、小中学生のクリエイターの方を対象とした賞になります。</li>
+								<li>＊入賞された方全員への副賞として、「第4回 Board Game Japanカップ入賞作品」であることを示すオリジナルのロゴデータをお送りします。
+									ボードゲームを商品化される際のパッケージや、制作資金を調達する際のクラウドファンディングなどにご活用ください。</li>
 							</ul>
 						</dd>
 						<dt>応募内容</dt>
@@ -97,42 +98,6 @@
 						<dd>「<strong>コンセプトやゲームシステムのオリジナリティ</strong>」「<strong>学びの要素や社会への波及効果</strong>」「<strong>ゲームとしての面白さ</strong>」を審査員が総合的に評価します。</dd>
 					</dl>
 				</section>
-				<section id="junior">
-					<h3>ジュニアクリエイター部門</h3>
-					<dl>
-						<dt>おうぼできる人</dt>
-						<dd>ボードゲームを<strong>自分で作ったことがある小中学生</strong>の人<br/>
-							＊ 作品をだれかといっしょに作った場合、チームでおうぼすることもできます。その場合はエントリーするときに、作った人全員の名前を書いてください。</dd>
-						<dt>しょう品</dt>
-						<dd>
-							<ul>
-								<li><strong>大しょう</strong> (1作品)<br/>
-									しょう品: Amazonギフトカード<em>3万円</em>分、「第3回 Board Game Japanカップ大しょう受しょう作品」であることがわかるオリジナルの<em>ロゴデータ</em>（ボードゲームをさらにたくさんの人に遊んでもらうために役立ててください）</li>
-								<li><strong>入しょう</strong> (5作品まで)<br/>
-									しょう品: Amazonギフトカード<em>1万円</em>分、「第3回 Board Game Japanカップ入しょう作品」であることがわかるオリジナルの<em>ロゴデータ</em>（ボードゲームをさらにたくさんの人に遊んでもらうために役立ててください）</li>
-							</ul>
-						</dd>
-						<dt>おうぼするもの</dt>
-						<dd>自分で作った<strong>ボードゲーム</strong>（プロトタイプ（ためしにつくったもの）でもOKです）
-							<ul>
-								<li>おうぼする時はまだ出来上がっていない「プロトタイプ（ためしにつくったもの）」のボードゲームであっても、一度でも「<strong>テストプレイ</strong>」（ここでは、<em>作った人が決めたルールで、他の人が遊んでみる</em>ことをいいます）を行ったことがあればおうぼできます。</li>
-								<li>新しく作ったものだけでなく、<em>何年か前に作ったボードゲーム</em>でもおうぼできます。</li>
-								<li>おうぼできるボードゲームは<strong>自分で作ったもの</strong>のみです。<em>他の人が作った作品を自分の作品としておうぼすることはできません</em>。</li>
-								<li>ゲーム・アニメ・マンガのキャラクターのイラストを使うなど、<strong>ちょ作けんをむしして作った作品でおうぼすることはできません</strong>。</li>
-							</ul>
-						</dd>
-						<dt>おうぼのやりかた</dt>
-						<dd><a href="#entry" v-on:click="page = 'entry'">Googleフォーム</a>にどんなゲームを作ったかを書き、ゲームの写真などといっしょに送ってください。
-							「できれば用意するもの」はなくてもおうぼできますが、<em>送ってもらったほうが、しんさ員の人たちにとってどんなゲームか分かりやすくなるので、入しょうしやすくなるかも</em>しれません。
-							<ul>
-								<li><strong>かならず用意</strong>するもの: <strong>写真</strong></li>
-								<li><em>できれば用意</em>するもの: <em>プレイ動画</em>（5分まで）, <em>ルールブック</em>（ゲームのルールを分かりやすく書いたもの）</li>
-							</ul>
-						</dd>
-						<dt>しんさのポイント</dt>
-						<dd>「<strong>作った人のこせいが感じられるゲームかどうか</strong>」「<strong>遊ぶ人にとって学びなどがあるかどうか</strong>」「<strong>遊ぶ人にとって面白そうかどうか</strong>」の３つについて、しんさ員の人たちが「いいね」と思ったゲームを作った人にしょうをおくります。</dd>
-					</dl>
-				</section>
 			</article>
 			<article v-show="page == 'judge'">
 				<h2>審査</h2>
@@ -147,20 +112,17 @@
 				<section>
 					<h3>審査方法</h3>
 					<p>1月中旬〜下旬に、エントリー用のGoogleフォームに記載された内容および添付資料をもとに選考を行い、受賞候補作品を選定します。
-						それらの作品が応募者によるオリジナル作品かどうかの確認を事務局で行った上で、1月下旬に審査員による合議を行って受賞作品および大賞受賞作品を決定し、2月上旬に審査結果を発表する予定です。
+						それらの作品が応募者によるオリジナル作品かどうかの確認を事務局で行った上で、1月下旬に審査員による合議を行って受賞作品および大賞受賞作品を決定し、2月中旬に審査結果を発表する予定です。
 						入賞されたかどうかに関わらず、エントリーをされた方全員に審査結果をお伝えします。</p>
 				</section>
 			</article>
 			<article v-show="page == 'entry'">
-				<h2>「第3回 Board Game Japanカップ」エントリー受付フォーム</h2>
-				<p><strong>エントリー</strong>期間は<em>2024/11/1（金）～2025/1/10（金）</em>です。</p>
+				<h2>「第4回 Board Game Japanカップ」エントリー受付フォーム</h2>
+				<p><strong>エントリー</strong>期間は<em>2025/11/22（土）～2026/1/11（日）</em>です。</p>
 				<section>
-					<h3>クリエイター部門への応募</h3>
-					<p>エントリーは、<a href="https://docs.google.com/forms/d/e/1FAIpQLSfVtIa2P4zYOe22w8tBpTrqEWZKYQtxghImDfw2QsRy_fVDIw/viewform" target="_blank" rel="noopener noreferrer">クリエイター部門応募フォーム</a>をご利用ください。</p>
-				</section>
-				<section>
-					<h3>ジュニアクリエイター部門への応募</h3>
-					<p>エントリーは、<a href="https://docs.google.com/forms/d/e/1FAIpQLSdJgHh_bZ_7Wkv78wzOZhxDd0zOwp5KfpNUk0VDZCW6WdWyeg/viewform" target="_blank" rel="noopener noreferrer">ジュニアクリエイター部門応募フォーム</a>をご利用ください。</p>
+					<h3>応募方法</h3>
+					<p>応募は<em>お一人につき1作品</em>となります。ただし、複数名で共同制作された作品に関しては、エントリーされる代表者の方が別であれば、同じ方が制作に関わっていてもエントリーすることができます。
+						エントリーは、<a href="https://docs.google.com/forms/d/e/1FAIpQLScOJF5jXdna2mwJ2TZAvx-kX4ReunbDcvkqF1P32BErsVf1pw/viewform" target="_blank" rel="noopener noreferrer">こちらのフォーム</a>をご利用ください。</p>
 				</section>
 			</article>
 			<article v-show="page == 'result'">
