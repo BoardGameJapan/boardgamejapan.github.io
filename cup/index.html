@@ -7,7 +7,7 @@
 		<meta name="keywords" content="Board Game Japan, BGJ, ボードゲームジャパン, Board Game Japanカップ"/>
 		<meta property="og:site_name" content="Board Game Japan"/>
 		<meta property="og:image" content="../img/logo.jpg"/>
-		<title>「第4回Board Game Japanカップ」特設サイト</title>
+		<title>「第5回Board Game Japanカップ」特設サイト</title>
 		<link rel="stylesheet" href="style.css" type="text/css"/>
 		<link rel="icon" href="../favicon.ico"/>
 		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -24,24 +24,25 @@
 	<body>
 		<div id="app">
 			<!-- logo -->
-			<h1>第4回Board Game Japanカップ</h1>
+			<h1>第5回Board Game Japanカップ</h1>
 			<article v-show="page == 'top'">
-				<h2>「第4回Board Game Japanカップ」を開催しました!</h2>
+				<h2>「第5回Board Game Japanカップ」を開催します!</h2>
 				<p>NPO法人<a href="/">Board Game Japan</a>では、アマチュアのボードゲームクリエイターによるユニークな作品や、社会課題の解決やアカデミック・アウトリーチに貢献するゲームに光を当て、それらを表彰するコンテスト「第4回Board Game Japanカップ」を開催します。
 					ささやかですが、受賞された方への賞品も用意しています。</p>
-				<p><strong>多数のご応募、ありがとうございました!</strong></p><!--現在選考を行っていますので、結果発表までお待ちください。--><!--<a href="#result" v-on:click="page = 'result'">審査結果</a>を発表しました。-->
+				<p><strong>11/11（水）にエントリーフォームを公開予定です。</strong></p><!--多数のご応募、ありがとうございました!--><!--現在選考を行っていますので、結果発表までお待ちください。--><!--<a href="#result" v-on:click="page = 'result'">審査結果</a>を発表しました。-->
 				<p id="bg">* このコンテストにおける「<strong>ボードゲーム</strong>」は、<em>ボードゲームやカードゲームなどのアナログゲーム全般</em>を指します。</p>
 				<section>
 					<h3>スケジュール</h3>
 					<table>
-						<tr><th>エントリー期間</th><td>2025/11/22（土）～2026/1/11（日）</td></tr>
+						<tr><th>エントリー期間</th><td>2026/11/11（水）～2027/1/11（月祝）</td></tr>
 						<tr><th>選考期間</th></td><td>1月中旬～下旬</td></tr>
-						<tr><th>審査結果発表</th><td>2月中旬</td></tr>
+						<tr><th>審査結果発表</th><td>2月中旬予定</td></tr>
 					</table>
 				</section>
 				<section>
 					<h3>過去の実施結果</h3>
 					<ul>
+						<li><a href="#result-2026" v-on:click="page = 'result'">「第4回Board Game Japanカップ」審査結果</a>(2025年11月～2026年1月に実施)</li>
 						<li><a href="#result-2025" v-on:click="page = 'result'">「第3回Board Game Japanカップ」審査結果</a>(2024年11月～2025年1月に実施)</li>
 						<li><a href="#result-2024" v-on:click="page = 'result'">「第2回Board Game Japanカップ」審査結果</a>(2023年11月～2024年1月に実施)</li>
 						<li><a href="#result-2023" v-on:click="page = 'result'">「第1回Board Game Japanカップ」審査結果</a>(2023年1月～3月に実施)</li>
@@ -74,7 +75,7 @@
 								<li><strong>ジュニア賞</strong> (3作品以内)<br/>
 									賞品: Amazonギフトカード<em>1万円</em>分<br/></li>
 								＊ジュニア賞は、小中学生のクリエイターの方を対象とした賞になります。<br/>
-								＊入賞された方全員への副賞として、「第4回 Board Game Japanカップ入賞作品」であることを示すオリジナルのロゴデータをお送りします。
+								＊入賞された方全員への副賞として、「第5回 Board Game Japanカップ入賞作品」であることを示すオリジナルのロゴデータをお送りします。
 									ボードゲームを商品化される際のパッケージや、制作資金を調達する際のクラウドファンディングなどにご活用ください。<br/>
 							</ul>
 						</dd>
@@ -91,7 +92,7 @@
 							添付資料のうち、任意のものは添付しなくても応募できますが、<em>添付した場合は審査員が内容を理解しやすくなるため、評価が高くなる可能性</em>があります。
 							<ul>
 								<li>添付<strong>必須</strong>のもの: <strong>写真</strong></li>
-								<li>添付<em>任意</em>のもの: <em>企画書</em>, <em>プレイ動画</em>（5分以内）, <em>ルールブック</em></li>
+								<li>添付<em>任意</em>のもの: <em>プレイ動画</em>（5分以内）, <em>ルールブック</em></li>
 							</ul>
 						</dd>
 						<dt>審査基準</dt>
@@ -112,16 +113,16 @@
 				<section>
 					<h3>審査方法</h3>
 					<p>1月中旬〜下旬に、エントリー用のGoogleフォームに記載された内容および添付資料をもとに選考を行い、受賞候補作品を選定します。
-						それらの作品が応募者によるオリジナル作品かどうかの確認を事務局で行った上で、1月下旬に審査員による合議を行って受賞作品および大賞受賞作品を決定し、2月中旬に審査結果を発表する予定です。
+						それらの作品が応募者によるオリジナル作品かどうかの確認を事務局で行った上で、1月下旬に審査員による合議を行って受賞作品および大賞受賞作品を決定し、2月中旬ごろに審査結果を発表する予定です。
 						入賞されたかどうかに関わらず、エントリーをされた方全員に審査結果をお伝えします。</p>
 				</section>
 			</article>
 			<article v-show="page == 'entry'">
-				<h2>「第4回 Board Game Japanカップ」エントリー受付フォーム</h2>
-				<p><strong>エントリー</strong>期間は<em>2025/11/22（土）～2026/1/11（日）</em>です。</p>
+				<h2>「第5回 Board Game Japanカップ」エントリー受付フォーム</h2>
+				<p><strong>エントリー</strong>期間は<em>2026/11/11（水）～2027/1/11（月祝）</em>です。</p>
 				<section>
 					<h3>応募方法</h3>
-					<p>応募は<em>お一人につき1作品</em>となります。ただし、複数名で共同制作された作品に関しては、エントリーされる代表者の方が別であれば、同じ方が制作に関わっていてもエントリーすることができます。なお、次回の第5回については、2026年11月中に開催告知を行い、エントリー受付を開始する予定です。
+					<p>応募は<em>お一人につき1作品</em>となります。ただし、複数名で共同制作された作品に関しては、エントリーされる代表者の方が別であれば、同じ方が制作に関わっていてもエントリーすることができます。エントリーフォームは11/11（水）に公開予定です。<!--なお、次回の第6回については、2027年11月中に開催告知を行い、エントリー受付を開始する予定です。-->
 						<!--エントリーは、<a href="https://docs.google.com/forms/d/e/1FAIpQLScOJF5jXdna2mwJ2TZAvx-kX4ReunbDcvkqF1P32BErsVf1pw/viewform" target="_blank" rel="noopener noreferrer">こちらのフォーム</a>をご利用ください。-->
 					</p>
 				</section>
